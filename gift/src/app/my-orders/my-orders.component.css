@@ -1,0 +1,39 @@
+.my-orders{
+  margin-bottom: 100px;
+}
+.my-orders h1{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.my-orders .order-img{
+  width: 80px;
+  justify-content: space-between;
+}
+
+.my-orders .row{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom:1px solid #ddd;
+  display:flex;
+  justify-content: space-evenly;
+    align-items: center;
+    align-content: center
+}
+.my-orders .empty-order-image {
+  max-width: 100%;
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.heading
+{
+  color:blue;
+}
+.order
+{
+  color:red;
+}
+

@@ -1,0 +1,42 @@
+<nav class="nav">
+  <div class="navbar navbar-dark bg-primary shadow-sm">
+    <i style="font-size: 40px;" class="fas fa-shipping-fast">&nbsp;</i>
+    <strong style="font-size: 30px;"><h1><a routerLink="">Gift Shopping</a></h1></strong>
+    <div *ngIf="menuType !== 'admin'" class="nav-search">
+      <input type="text" #searchInput (keyup)="searchProduct($event)" (blur)="hideSearch()" placeholder="Search Products" />
+      <button (click)="submitSearch(searchInput.value)">Search</button>
+      <ul class="suggested-search" *ngIf="searchResult">
+        <li *ngFor="let item of searchResult">
+          <a (mousedown)="redirectToDetails(item.id)">{{item.name}}</a>
+        </li>
+      </ul>
+    </div>
+    <div class="menu">
+      <div [ngSwitch]="menuType">
+        <ul *ngSwitchCase="'default'">
+          <li><a routerLink="admin">Admin</a></li>
+          <li><a routerLink="">Home</a></li>
+          <li><a routerLink="aboutus">About Us</a></li>
+          <li><a routerLink="contactus">Contact Us</a></li>
+          <li><a routerLink="user">Login/Sign-up</a></li>
+        </ul>
+        <ul *ngSwitchCase="'user'">
+          <li><a routerLink="">Home</a></li>
+          <li><a routerLink="aboutus">About Us</a></li>
+          <li><a routerLink="contactus">Contact Us</a></li>
+          <li><a routerLink="my-orders">My Orders</a></li>
+          <li><a>{{userName | titlecase}}</a></li>
+          <li><a (click)="userLogout()">Logout</a></li>
+          <li><a [routerLink]="cartItems > 0 ? 'cart-page' : null">Cart({{cartItems}})</a></li>
+        </ul>
+        <ul *ngSwitchCase="'admin'">
+          <li><a routerLink="admin-add-product">Add Product</a></li>
+          <li><a routerLink="admin-home">List</a></li>
+          <li><a routerLink="ordered-products">Ordered Products</a></li>
+          <li><a (click)="logout()">Logout</a></li>
+          <li><a href="#">{{sellerName | titlecase}}</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>

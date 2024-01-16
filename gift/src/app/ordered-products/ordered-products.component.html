@@ -1,0 +1,75 @@
+<div class="my-orders">
+  <div class="heading">
+    <h1>Ordered Products</h1>
+  </div>
+  <ng-container *ngIf="orderData && orderData.length > 0; else emptyOrders">
+    <div class="row">
+      <div class="col-sm-1">
+        <span>Orders</span>
+      </div>
+      <div class="col-sm-1">
+        <span>Name</span>
+      </div>
+      <div class="col-sm-1">
+        <span>Color</span>
+      </div>
+      <div class="col-sm-1">
+        <span>Quantity</span>
+      </div>
+      <div class="col-sm-1">
+        <span>Category</span>
+      </div>
+      <div class="col-sm-1">
+        <span>User Name</span>
+      </div>
+      <div class="col-sm-1">
+        <span>Order Id</span>
+      </div>
+      <div class="col-sm-1">
+        <span>Price</span>
+      </div>
+      <div class="col-sm-1">
+        <span>Status</span>
+      </div>
+    </div>
+
+    <div *ngFor="let order of orderData">
+      <div class="row" *ngIf="order.orderedProducts && order.orderedProducts.length > 0">
+
+        <div class="col-sm-1">
+          <img class="order-img" [src]="order.orderedProducts[0]?.image || 'default-image-url'" alt="" />
+        </div>
+        <div class="col-sm-1">
+          <span>{{ order.orderedProducts[0]?.name }}</span>
+        </div>
+        <div class="col-sm-1">
+          <span>{{ order.orderedProducts[0]?.color }}</span>
+        </div>
+        <div class="col-sm-1">
+          <span>{{ order.orderedProducts[0]?.quantity }}</span>
+        </div>
+        <div class="col-sm-1">
+          <span>{{ order.orderedProducts[0]?.category }}</span>
+        </div>
+        <div class="col-sm-1">
+          <span>{{ order.userName }}</span>
+        </div>
+        <div class="col-sm-1">
+          <span>#{{ order.id }}</span>
+        </div>
+        <div class="col-sm-1">
+          <span>{{ order.totalPrice }}</span>
+        </div>
+        <div class="col-sm-1">
+          <span>In Progress</span>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+  <ng-template #emptyOrders>
+    <div class="empty">
+      <img src="https://cdn.dribbble.com/users/9620200/screenshots/17987839/media/fd60cc8251e50a8c54d3dde620ff9460.jpg?resize=768x576&vertical=center" alt="Empty Order" class="empty-order-image" />
+    </div>
+  </ng-template>
+</div>
+

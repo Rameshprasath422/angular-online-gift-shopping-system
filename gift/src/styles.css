@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+body
+{
+  margin:0px;
+  padding:0px;
+}
+.container{
+  margin-left:5%;
+  margin-right:5%;
+  display:contents;
+}

@@ -1,0 +1,73 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="text-center">
+          <h1>Admin Login</h1>
+        </div>
+        <form #sellerLogin="ngForm" class="common-form">
+          <p class="invalid-input" *ngIf="message">{{ message }}</p>
+          <div class="mb-3">
+            <input
+              type="text"
+              class="form-input"
+              placeholder="Enter Email"
+              name="email"
+              #email="ngModel"
+              [(ngModel)]="userData.email"
+              required
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            />
+          </div>
+          <p class="invalid-input">
+            <span
+              *ngIf="(email.touched || sellerLogin.submitted) &&
+                email.errors?.['required']"
+            >
+              Email is Required
+            </span>
+            <span
+              *ngIf="(email.touched || sellerLogin.submitted) &&
+                email.errors?.['pattern']"
+            >
+              Enter a valid Email Address
+            </span>
+          </p>
+          <div class="mb-3">
+            <input
+              type="password"
+              class="form-input"
+              placeholder="Enter Password"
+              name="password"
+              #password="ngModel"
+              [(ngModel)]="userData.password"
+              minlength="6"
+              required
+              pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$"
+            />
+          </div>
+          <p class="invalid-input">
+            <span
+              *ngIf="(password.touched || sellerLogin.submitted) &&
+                password.errors?.['required']"
+            >
+              Password is Required
+            </span>
+            <span
+              *ngIf="(password.touched || sellerLogin.submitted) &&
+                password.errors?.['pattern']"
+            >
+              Please Enter Valid Password
+            </span>
+          </p>
+          <div class="button">
+            <button class="btn btn-primary mb-2" (click)="login()">
+              Login
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+

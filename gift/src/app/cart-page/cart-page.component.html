@@ -1,0 +1,76 @@
+<div class="cart-page">
+  <div class="heading">
+  </div>
+  <div class="row" *ngIf="cartData&&cartData.length == 0">
+    <div class="empty-cart">
+      <img src="https://qrs.in/frontent/images/emptyshopping.jpg" alt="Empty Cart" />
+    </div>
+  </div>
+  <div class="row" *ngIf="cartData&&cartData.length > 0">
+    <div class="col-sm-8 details">
+      <div class="heading">
+        <h1>Cart Page</h1>
+      </div>
+      <ul *ngFor="let cart of cartData">
+        <div class="img">
+          <li>
+            <img src="{{ cart.image }}" alt="" />
+          </li>
+        </div>
+        <div class="name">
+          <li>
+            <span> {{ cart.name }}</span>
+          </li>
+        </div>
+        <div class="price">
+          <li>
+            <span> Price : {{ cart.price }}</span>
+          </li>
+        </div>
+        <div class="Quantity">
+          <li>
+            <span> Quantity : {{ cart.quantity }}</span>
+          </li>
+        </div>
+        <li>
+          <button class="btn btn-primary mb-2" (click)="removeToCart(cart.id)">
+            Remove To Cart
+          </button>
+        </li>
+      </ul>
+    </div>
+    <div class="col-sm-4 summary">
+      <div class="heading">
+        <h3>Summary</h3>
+      </div>
+      <ul>
+        <div class="Amount">
+          <li>
+            <span>Amount:</span><span>{{ priceSummary.price }}</span>
+          </li>
+        </div>
+        <div class="delivery">
+          <li>
+            <span>Delivery:</span><span>{{ priceSummary.delivery }}</span>
+          </li>
+        </div>
+        <div class="discount">
+          <li>
+            <span>Discount:</span><span>{{ this.priceSummary.discount }}</span>
+          </li>
+        </div>
+        <div class="Total">
+          <li>
+            <span><h4>Total</h4></span>
+            <span><h4>{{ priceSummary.total }}</h4></span>
+          </li>
+        </div>
+        <button (click)="checkout()" class="btn btn-primary mb-2">
+          Checkout
+        </button>
+        <br />
+        <button (click)="goBack()" class="btn btn-primary mb-2">Back</button>
+      </ul>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,64 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="text-center">
+          <h1>Payment Gateway</h1>
+            <p class="message">{{ orderMessage }}</p>
+        </div>
+        <form [formGroup]="paymentForm" (ngSubmit)="onSubmit()">
+          <div class="mb-3">
+            <label for="name">Enter Card Holder Name</label><br>
+            <input type="text" id="name" formControlName="name" required>
+            <div *ngIf="paymentForm.get('name')?.invalid && paymentForm.get('name')?.touched">
+              <div class="invalid-input">
+              <div *ngIf="paymentForm.get('name')?.errors?.['required']">Card Holder Name Required</div>
+              <div *ngIf="paymentForm.get('name')?.errors?.['pattern']">Card Holder Name must contain only letters</div>
+              </div>
+            </div>
+          </div><br>
+          <div class="mb-3">
+            <label for="amount">Amount</label><br>
+            <input type="number" id="amount" [value]="totalAmount" readonly required>
+          </div><br>
+          <div class="mb-3">
+            <label for="number">Card Number</label><br>
+            <input type="number" id="number" formControlName="number" required>
+            <div *ngIf="paymentForm.get('number')?.invalid && paymentForm.get('number')?.touched">
+              <div class="invalid-input">
+              <div *ngIf="paymentForm.get('number')?.errors?.['required']">Card Number Required</div>
+              <div *ngIf="paymentForm.get('number')?.errors?.['pattern']">Card Number must have minimum 16 digits</div>
+              </div>
+            </div>
+          </div><br>
+          <div class="mb-3">
+            <label for="date">Expiry Date</label><br>
+            <input type="date" id="date" formControlName="date" required>
+            <div class="invalid-input">
+            <div *ngIf="paymentForm.get('date')?.invalid && paymentForm.get('date')?.touched">
+              <div *ngIf="paymentForm.get('date')?.errors?.['required']">Expiry Date Required</div>
+            </div>
+            </div>
+          </div><br>
+          <div class="mb-3">
+            <label for="cvv">CVV</label><br>
+            <input type="number" id="cvv" formControlName="cvv" required>
+            <div *ngIf="paymentForm.get('cvv')?.invalid && paymentForm.get('cvv')?.touched">
+              <div class="invalid-input">
+              <div *ngIf="paymentForm.get('cvv')?.errors?.['required']">CVV Required</div>
+              <div *ngIf="paymentForm.get('cvv')?.errors?.['pattern']">CVV must have minimum 4 digits</div>
+            </div>
+            </div>
+          </div><br>
+          <div class="button">
+            <button type="submit" class="btn btn-primary mb-2">Payment</button><br>
+            <button (click)="goBack()" class="btn btn-primary mb-2">Back</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

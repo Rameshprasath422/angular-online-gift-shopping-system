@@ -1,0 +1,64 @@
+/* CSS */
+.about-us {
+  background-color: #f7f7f7;
+  text-align: center;
+  padding: 80px 0;
+  color: #333;
+}
+
+.about-us .container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.about-us h2 {
+  font-size: 36px;
+  color: #e91e63;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-align:center;
+}
+
+.about-us li {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.about-us li:nth-child(2n) {
+  font-weight: bold;
+  color: #2196f3;
+}
+
+.about-us li:last-child {
+  font-style: italic;
+  color: #ff5733;
+}
+
+
+.about-us .btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #e91e63;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 20px;
+  transition: background-color 0.3s;
+}
+
+.about-us .btn:hover {
+  background-color: #ff1493;
+}
+
+@media (max-width: 768px) {
+  .about-us h2 {
+    font-size: 28px;
+  }
+
+  .about-us li {
+    font-size: 16px;
+  }
+}

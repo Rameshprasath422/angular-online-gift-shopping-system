@@ -1,0 +1,68 @@
+<div class="my-orders">
+  <div class="heading">
+    <h1>{{ orderData.length > 0 ? 'My Orders' : '' }}</h1>
+    <img *ngIf="orderData.length === 0" src="https://cdn.dribbble.com/users/9620200/screenshots/17987839/media/fd60cc8251e50a8c54d3dde620ff9460.jpg?resize=768x576&vertical=center" alt="Empty Order" class="empty-order-image" />
+  </div>
+  <div class="row" *ngIf="orderData.length > 0">
+    <div class="col-sm-1">
+      <span>Orders</span>
+    </div>
+    <div class="col-sm-1">
+      <span>Name</span>
+    </div>
+    <div class="col-sm-1">
+      <span>Color</span>
+    </div>
+    <div class="col-sm-1">
+      <span>Quantity</span>
+    </div>
+    <div class="col-sm-1">
+      <span>Category</span>
+    </div>
+    <div class="col-sm-1">
+      <span>Order Id</span>
+    </div>
+    <div class="col-sm-1">
+      <span>Price</span>
+    </div>
+    <div class="col-sm-1">
+      <span>Status</span>
+    </div>
+    <div class="col-sm-2">
+      <span>Cancel Order</span>
+    </div>
+  </div>
+  <div *ngFor="let order of orderData">
+    <div class="row" *ngFor="let product of order.orderedProducts">
+      <div class="col-sm-1">
+        <img class="order-img" [src]="product.image" alt="" />
+      </div>
+      <div class="col-sm-1">
+        <span>{{ product.name }}</span>
+      </div>
+      <div class="col-sm-1">
+        <span>{{ product.color }}</span>
+      </div>
+      <div class="col-sm-1">
+        <span>{{ product.quantity }}</span>
+      </div>
+      <div class="col-sm-1">
+        <span>{{ product.category }}</span>
+      </div>
+      <div class="col-sm-1">
+        <span>#{{ order.id }}</span>
+      </div>
+      <div class="col-sm-1">
+        <span>{{ order.totalPrice }}</span>
+      </div>
+      <div class="col-sm-1">
+        <span>In Progress</span>
+      </div>
+      <div class="col-sm-2">
+        <button class="btn btn-primary mb-2" (click)="cancelOrder(order.id,  order.totalPrice)">
+          Cancel Order
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,24 @@
+<div class="product-list-wrapper">
+<h1 class="heading">Trendy Products</h1>
+<div class="row">
+<div class="col-sm-3" *ngFor="let item of trendyProducts">
+  <div class="product-item">
+    <img src="{{item.image}}" alt="">
+  <div class="product-details">
+    <h6 class="name-head">{{item.name}}</h6>
+    <div class="product-price">
+      <h6>Price:{{item.price}}</h6>
+      <div class="discount">Off:{{item.discount}}%</div>
+      <i class="fas-fa-star"></i>
+    </div>
+    <div class="product-color">
+      <h6>Color:{{item.color}}</h6>
+    </div>
+  </div>
+  <div class="product-footer">
+    <button (click)="openViewDetails(item)" class="btn btn-primary mb-2">Add to Cart</button>
+  </div>
+  </div>
+</div>
+</div>
+</div>

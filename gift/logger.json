@@ -1,0 +1,124 @@
+{
+  "logger": [
+    {
+      "level": 5,
+      "additional": [],
+      "message": "User Login Success - User ID:",
+      "timestamp": "2023-09-04T10:49:14.326Z",
+      "fileName": "main.js",
+      "lineNumber": 3685,
+      "columnNumber": 21,
+      "id": 1
+    },
+    {
+      "level": 5,
+      "additional": [],
+      "message": "Products added to cart: 8 Roses",
+      "timestamp": "2023-09-04T10:49:28.271Z",
+      "fileName": "main.js",
+      "lineNumber": 1239,
+      "columnNumber": 21,
+      "id": 2
+    },
+    {
+      "level": 5,
+      "additional": [],
+      "message": "Payment stored successfully",
+      "timestamp": "2023-09-04T10:50:13.147Z",
+      "fileName": "main.js",
+      "lineNumber": 2705,
+      "columnNumber": 19,
+      "id": 3
+    },
+    {
+      "level": 5,
+      "additional": [],
+      "message": "Order Placed-Order has been placed",
+      "timestamp": "2023-09-04T10:50:22.193Z",
+      "fileName": "main.js",
+      "lineNumber": 1434,
+      "columnNumber": 23,
+      "id": 4
+    },
+    {
+      "level": 5,
+      "additional": [],
+      "message": "Ordered Product Name: 8 Roses",
+      "timestamp": "2023-09-04T10:51:14.342Z",
+      "fileName": "main.js",
+      "lineNumber": 2235,
+      "columnNumber": 21,
+      "id": 5
+    },
+    {
+      "level": 5,
+      "additional": [],
+      "message": "Order Cancelled Successfully Full amount refunded",
+      "timestamp": "2023-09-04T10:51:18.640Z",
+      "fileName": "main.js",
+      "lineNumber": 2245,
+      "columnNumber": 23,
+      "id": 6
+    },
+    {
+      "level": 5,
+      "additional": [],
+      "message": "User Logout Successfully",
+      "timestamp": "2023-09-04T10:51:28.083Z",
+      "fileName": "main.js",
+      "lineNumber": 1903,
+      "columnNumber": 17,
+      "id": 7
+    },
+    {
+      "level": 5,
+      "additional": [],
+      "message": "Admin Login:Login Success",
+      "timestamp": "2023-09-04T11:11:36.710Z",
+      "fileName": "main.js",
+      "lineNumber": 750,
+      "columnNumber": 21,
+      "id": 8
+    },
+    {
+      "level": 5,
+      "additional": [],
+      "message": "Product Add - Product ID: 12 - Product is added successfully",
+      "timestamp": "2023-09-04T11:12:28.034Z",
+      "fileName": "main.js",
+      "lineNumber": 221,
+      "columnNumber": 21,
+      "id": 9
+    },
+    {
+      "level": 5,
+      "additional": [],
+      "message": "Product Update - Product ID: 12 - Product has been updated successfully",
+      "timestamp": "2023-09-04T11:12:42.235Z",
+      "fileName": "main.js",
+      "lineNumber": 580,
+      "columnNumber": 23,
+      "id": 10
+    },
+    {
+      "level": 5,
+      "additional": [],
+      "message": "Product Delete - Product ID: 12 - Product is Deleted Successfully",
+      "timestamp": "2023-09-04T11:12:51.919Z",
+      "fileName": "main.js",
+      "lineNumber": 408,
+      "columnNumber": 21,
+      "id": 11
+    },
+    {
+      "level": 5,
+      "additional": [],
+      "message": "Admin Logout Successfully",
+      "timestamp": "2023-09-04T11:12:56.836Z",
+      "fileName": "main.js",
+      "lineNumber": 1896,
+      "columnNumber": 17,
+      "id": 12
+    }
+  ]
+}

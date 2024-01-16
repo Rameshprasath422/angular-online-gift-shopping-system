@@ -1,0 +1,93 @@
+.nav {
+  display: block;
+    width: 100%;
+    max-width: 100%;
+    margin-right: 15px;
+    padding-top: 0px;
+    padding-bottom: 30px;
+    top:0;
+    left:0;
+    right:0;
+   
+}
+
+.nav h1 {
+  color: blue;
+  margin: 0;
+  font-size: 40px;
+}
+.nav .nav-search {
+  flex: 1;
+  display: flex;
+  margin-left: 5%;
+  margin-right:5%;
+  margin-top: 5px;
+  border-radius:3px;
+  width:100px;
+  
+}
+
+.nav .nav-search input {
+    flex: 1;
+    color: blue;
+    border: 1px solid blue;
+    height: 39px;
+    border-right: none;
+}
+
+.nav .nav-search button{
+    color: blue;
+    border: 1px solid blue;
+    height: 39px;
+}
+
+.menu ul {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.menu ul li{
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+.menu ul a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+h1 a{
+  color:white;
+  text-decoration: none;
+}
+
+.suggested-search{
+  position: absolute;
+  top: 40px;
+  z-index: 10;
+  display: list-item !important;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  width: 300px;
+}
+.suggested-search li {
+  padding:5px;
+  border: 1px solid #ddd;
+}
+.suggested-search li a{
+  cursor: pointer;
+  color: blue;
+}
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.navbar{
+  height:15vh;
+  padding-left:25px;
+  padding-right:25px;
+}
+

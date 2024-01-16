@@ -1,0 +1,268 @@
+{
+  "admin": [
+    {
+      "name": "Ramesh",
+      "email": "rameshprasath04@gmail.com",
+      "password": "Ramesh@2308"
+    }
+  ],
+  "products": [
+    {
+      "name": "Heart Teddy Bear",
+      "price": "150",
+      "category": "Teddy Bear",
+      "color": "Pink",
+      "description": "Teddies are just another reason just another way to say I care  I will be there forever no matter the good and bad times we share",
+      "image": "https://tiimg.tistatic.com/fp/1/004/516/heart-teddy--643.jpg",
+      "id": 1
+    },
+    {
+      "name": "8 Roses",
+      "price": "250",
+      "category": "Flowers",
+      "color": "Mixed Colors",
+      "description": "The rose is a rose from the time it is a seed to the time it dies within it at all times it contains its whole potential it seems to be constantly in the process of change yet at each state at each moment it is perfectly all right as it is",
+      "image": "https://5.imimg.com/data5/SELLER/Default/2021/12/FA/TE/GJ/89432153/light-mug-250x250.jpg",
+      "id": 2
+    },
+    {
+      "name": "Purple Roses",
+      "price": "150",
+      "category": "Flowers",
+      "color": "Purple",
+      "description": "A soothing display that exudes affection and sentimentality. Inclusive of lilac roses, pink lisianthus, light mauve spray chrysanthemum, kamini stems and lavender leather ferns, its marshalled to provide an unequalled glow at a stroke, filling you up with tender warmth.",
+      "image": "https://res.cloudinary.com/interflora/f_auto,q_auto,t_pnopt9prodlp/products/p-mauve-me-more-187560-m.jpg",
+      "id": 3,
+      "discount": 10
+    },
+    {
+      "name": "Red Roses",
+      "price": "150",
+      "category": "Flowers",
+      "color": "Red",
+      "description": "Every lover's muse, Red Roses are truly poetic. Professing emotions with Red Roses is the perfect thing. So, go ahead and tell everyone what the heart says with this bunch of 8 Red Roses, wrapped warmly in Red paper",
+      "image": "https://d3cif2hu95s88v.cloudfront.net/live-site-2016/product-image/21stDec/red-love-600x600.JPG",
+      "id": 4,
+      "discount": 10
+    },
+    {
+      "name": "Reflex-Play Smart Watch",
+      "price": "500",
+      "category": "Watches",
+      "color": "Black",
+      "description": "Unlike diamonds watches were practical they were for people on the run, people with appointments to keep and schedules to meet ",
+      "image": "https://staticimg.titan.co.in/Fastrack/Catalog/38074AP01_1.jpg",
+      "id": 5
+    },
+    {
+      "name": "Happiness Hamper",
+      "price": "200",
+      "category": "White",
+      "color": "Gift Hampers",
+      "description": "Happiness in a basket a gift that goes beyond and it's just fantastic a gift hamper is the perfect way to show you are unique and special to them",
+      "image": "https://cdn.igp.com/f_auto,q_auto,t_pnopt9prodlp/products/p-wholesome-happiness-hamper-179289-m.jpg",
+      "id": 6
+    },
+    {
+      "name": "Birthday Cake",
+      "price": "100",
+      "category": "Cakes",
+      "color": "White",
+      "description": "Birthday cake is symbolic It is a tempting symbol to load with something more complicated than just Happy Birthday because it is the emblem of childhood and a happy day",
+      "image": "https://cdn.pixabay.com/photo/2023/03/14/21/29/birthday-cake-7853211_1280.jpg",
+      "id": 7
+    },
+    {
+      "name": "Dairy Milk",
+      "price": "200",
+      "category": "Chocolates",
+      "color": "Chocolate",
+      "description": "One bite and you will be in Dairy Milk heaven Life is short eat the Dairy Milk there is no such things as too much Dairy Milk",
+      "image": "https://m.media-amazon.com/images/I/61+rJ-TihML._AC_UF1000,1000_QL80_.jpg",
+      "id": 8
+    },
+    {
+      "name": "Photo Frame",
+      "price": "250",
+      "category": "Frame",
+      "color": "Black",
+      "description": "Family is like music some high notes and some low notes when life knocks you down family is the one that always stand by your side\n ",
+      "image": "https://photoexpress.in/wp-content/uploads/2023/03/New.jpg.webp",
+      "id": 9
+    },
+    {
+      "name": "Birthday Hamper",
+      "price": "300",
+      "category": "Hamper",
+      "color": "Violet",
+      "description": "A birthday is a glorious day filled with good laughter gladness and great memories make your birthday more colorful by buying Birthday Hamper",
+      "image": "https://kreateworld.in/cdn/shop/products/5e9f5712-5112-46d0-8610-4beb85d73a36.png?v=1673000537",
+      "id": 10
+    },
+    {
+      "name": "Two Teddy",
+      "price": "250",
+      "category": "Teddy Bear",
+      "color": "Pink",
+      "description": "In the arms of a teddy bear by your side reminding you of the innocence of childhood a bedroom without teddy is like a face without smile",
+      "image": "https://www.jiomart.com/images/product/original/rvpaqajkzb/deals-india-couple-love-teddy-bears-in-basket-30-cm-pink-product-images-orvpaqajkzb-p591730346-0-202205301727.jpg?im=Resize=(420,420)",
+      "id": 11
+    },
+    {
+      "name": "Purple Rose with Necklace",
+      "price": "600",
+      "category": "Purple and White",
+      "color": "Necklace",
+      "description": "Impressions are like pearls ideas are like the string that turns the pearls into a necklace the string is invisible but it is not dispensable and cannot be broken",
+      "image": "https://images-cdn.ubuy.co.in/63513b79f6b99456a82dc243-preserved-real-purple-rose-with-i-love.jpg",
+      "id": 12
+    },
+    {
+      "name": "Gift Card",
+      "price": "150",
+      "category": "Black and White",
+      "color": "Gift Cards",
+      "description": "Every gift which is given even though it be large or small is in reality great if it is given with affection Another adventure filled year awaits you Welcome it by celebrating your birthday by purchasing this card",
+      "image": "https://www.card-making-world.com/wp-content/uploads/2017/04/happy-birthday-card-ideas-handmade-card-making.jpg",
+      "id": 13
+    },
+    {
+      "name": "Wall Clock",
+      "price": "400",
+      "category": "Black",
+      "color": "Clock",
+      "description": "Time is a precious commodity make every moment count with this clock Every tick brings you closer to your dreams ",
+      "image": "https://cdn11.bigcommerce.com/s-8smrzb0w7f/images/stencil/1280x1280/products/63647/63406/61Gj2Pe4L8L._SL1000___40155.1602915881.jpg?c=1?imbypass=on",
+      "id": 14
+    },
+    {
+      "name": "Radha Krishna Statue",
+      "price": "600",
+      "category": "Statue",
+      "color": "Gold",
+      "description": "Every block of stone has a statue inside it and it is the task of the sculptor to discover it when you slow down enough to sculpt you discover all kinds of things you never noticed before",
+      "image": "https://5.imimg.com/data5/SELLER/Default/2022/12/YQ/TF/KZ/4012583/rk-1000x1000.jpg",
+      "id": 15
+    },
+    {
+      "name": "Blue Teddy",
+      "price": "150",
+      "category": "Teddy Bear",
+      "color": "Blue",
+      "description": "Every Teddy knows how to make people smile no magic no spells and yet they manage to lift up the mood",
+      "image": "https://5.imimg.com/data5/SELLER/Default/2023/7/327263993/TR/YR/IG/18972651/lovely-teddy-bear-1000x1000.jpeg",
+      "id": 16
+    },
+    {
+      "name": "Light Mug",
+      "price": "120",
+      "category": "White",
+      "color": "Mug",
+      "description": "Light is one of the most important elements of life both physically and spiritually may the light illuminate your path and guide you towards truth and knowledge",
+      "image": "https://5.imimg.com/data5/SELLER/Default/2021/12/FA/TE/GJ/89432153/light-mug-250x250.jpg",
+      "id": 17
+    },
+    {
+      "name": "Dairy Milk Gift Hamper",
+      "price": "800",
+      "category": "Purple",
+      "color": "Chocolate",
+      "description": "One bite and you will be in Dairy Milk heaven Life is short eat the Dairy Milk there is no such things as too much Dairy Milk",
+      "image": "https://assets.winni.in/product/primary/2014/10/49715.jpeg?dpr=1&w=400",
+      "id": 18
+    },
+    {
+      "name": "Lippon Art",
+      "price": "1000",
+      "category": "White",
+      "color": "Art",
+      "description": "Art is not what you see but what you make others see Art is a collaboration between god and the artist and less the artist does the better",
+      "image": "https://www.craftsnchisel.com/cdn/shop/products/15-inches-peacock-and-white-lippan-art-wall-hanging-mirror-wall-decor-indian-home-decor-crafts-n-chisel-1.jpg?v=1671240490",
+      "id": 19
+    },
+    {
+      "name": "Radiant  Lamp",
+      "price": "300",
+      "category": "Lamp",
+      "color": "Multi Colors",
+      "description": "Seek to share joy with others or to make somebody else happy and you find your own soul radiant with the joy you wished for another",
+      "image": "https://myart.pk/cdn/shop/products/acd8aa0d484fb33cedd632c364a97409_1024x1024_2x_cdd663ed-bcfa-4c56-866d-ba6c5d9e8b24_800x.gif?v=1591662210",
+      "id": 20
+    }
+  ],
+  "users": [
+    {
+      "name": "Ramesh",
+      "email": "rameshprasath04@gmail.com",
+      "password": "Ramesh@210",
+      "id": 1
+    },
+    {
+      "name": "Pravin",
+      "email": "pravin07@gmail.com",
+      "password": "Pravin@123",
+      "id": 2
+    },
+    {
+      "name": "Suresh",
+      "email": "sureshg99@gmail.com",
+      "password": "Suresh@123",
+      "id": 3
+    },
+    {
+      "name": "Selwin",
+      "email": "selwin06@gmail.com",
+      "password": "Selwin@06",
+      "id": 4
+    },
+    {
+      "name": "barath",
+      "email": "barath07@gmail.com",
+      "password": "Barath@07",
+      "id": 5
+    },
+    {
+      "name": "Pravin",
+      "email": "",
+      "password": "",
+      "id": 6
+    },
+    {
+      "name": "Praveen Kumar",
+      "email": "pravinkumar07@gmail.com",
+      "password": "Pravin@123",
+      "id": 7
+    },
+    {
+      "name": "Bharathi",
+      "email": "bharathi07@gmail.com",
+      "password": "Bharathi@07",
+      "id": 8
+    }
+  ],
+  "cart": [
+    {
+      "name": "Heart Teddy Bear",
+      "price": "150",
+      "category": "Teddy Bear",
+      "color": "Pink",
+      "description": "A bedroom without teddy is like a face without a smile",
+      "image": "https://tiimg.tistatic.com/fp/1/004/516/heart-teddy--643.jpg",
+      "quantity": 1,
+      "productId": "3",
+      "userId": 3,
+      "id": 1
+    }
+  ],
+  "orders": [],
+  "payments": [
+    {
+      "name": "Pravin",
+      "amount": 800,
+      "number": 12345678,
+      "date": "2023-07-07",
+      "cvv": 1234,
+      "id": 1
+    }
+  ]
+}

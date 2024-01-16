@@ -1,0 +1,344 @@
+{
+  "logger": [
+    {
+      "level": 5,
+      "additional": [],
+      "message": "User Login Success - User ID:",
+      "timestamp": "2023-09-04T10:49:14.326Z",
+      "fileName": "main.js",
+      "lineNumber": 3685,
+      "columnNumber": 21,
+      "id": 1
+    },
+    {
+      "level": 5,
+      "additional": [],
+      "message": "Products added to cart: 8 Roses",
+      "timestamp": "2023-09-04T10:49:28.271Z",
+      "fileName": "main.js",
+      "lineNumber": 1239,
+      "columnNumber": 21,
+      "id": 2
+    },
+    {
+      "level": 5,
+      "additional": [],
+      "message": "Payment stored successfully",
+      "timestamp": "2023-09-04T10:50:13.147Z",
+      "fileName": "main.js",
+      "lineNumber": 2705,
+      "columnNumber": 19,
+      "id": 3
+    },
+    {
+      "level": 5,
+      "additional": [],
+      "message": "Order Placed-Order has been placed",
+      "timestamp": "2023-09-04T10:50:22.193Z",
+      "fileName": "main.js",
+      "lineNumber": 1434,
+      "columnNumber": 23,
+      "id": 4
+    },
+    {
+      "level": 5,
+      "additional": [],
+      "message": "Ordered Product Name: 8 Roses",
+      "timestamp": "2023-09-04T10:51:14.342Z",
+      "fileName": "main.js",
+      "lineNumber": 2235,
+      "columnNumber": 21,
+      "id": 5
+    },
+    {
+      "level": 5,
+      "additional": [],
+      "message": "Order Cancelled Successfully Full amount refunded",
+      "timestamp": "2023-09-04T10:51:18.640Z",
+      "fileName": "main.js",
+      "lineNumber": 2245,
+      "columnNumber": 23,
+      "id": 6
+    },
+    {
+      "level": 5,
+      "additional": [],
+      "message": "User Logout Successfully",
+      "timestamp": "2023-09-04T10:51:28.083Z",
+      "fileName": "main.js",
+      "lineNumber": 1903,
+      "columnNumber": 17,
+      "id": 7
+    },
+    {
+      "level": 5,
+      "additional": [],
+      "message": "Admin Login:Login Success",
+      "timestamp": "2023-09-04T11:11:36.710Z",
+      "fileName": "main.js",
+      "lineNumber": 750,
+      "columnNumber": 21,
+      "id": 8
+    },
+    {
+      "level": 5,
+      "additional": [],
+      "message": "Product Add - Product ID: 12 - Product is added successfully",
+      "timestamp": "2023-09-04T11:12:28.034Z",
+      "fileName": "main.js",
+      "lineNumber": 221,
+      "columnNumber": 21,
+      "id": 9
+    },
+    {
+      "level": 5,
+      "additional": [],
+      "message": "Product Update - Product ID: 12 - Product has been updated successfully",
+      "timestamp": "2023-09-04T11:12:42.235Z",
+      "fileName": "main.js",
+      "lineNumber": 580,
+      "columnNumber": 23,
+      "id": 10
+    },
+    {
+      "level": 5,
+      "additional": [],
+      "message": "Product Delete - Product ID: 12 - Product is Deleted Successfully",
+      "timestamp": "2023-09-04T11:12:51.919Z",
+      "fileName": "main.js",
+      "lineNumber": 408,
+      "columnNumber": 21,
+      "id": 11
+    },
+    {
+      "level": 5,
+      "additional": [],
+      "message": "Admin Logout Successfully",
+      "timestamp": "2023-09-04T11:12:56.836Z",
+      "fileName": "main.js",
+      "lineNumber": 1896,
+      "columnNumber": 17,
+      "id": 12
+    },
+    {
+      "level": 5,
+      "additional": [],
+      "message": "Admin Login:Login Success",
+      "timestamp": "2023-09-04T11:32:25.329Z",
+      "fileName": "main.js",
+      "lineNumber": 750,
+      "columnNumber": 21,
+      "id": 13
+    },
+    {
+      "level": 5,
+      "additional": [],
+      "message": "Product Add - Product Name: Teddy - Product Teddy is added successfully",
+      "timestamp": "2023-09-04T11:32:54.849Z",
+      "fileName": "main.js",
+      "lineNumber": 221,
+      "columnNumber": 21,
+      "id": 14
+    },
+    {
+      "level": 5,
+      "additional": [],
+      "message": "Product Update - Product Name: Teddy - Product Teddy has been updated successfully",
+      "timestamp": "2023-09-04T11:33:08.531Z",
+      "fileName": "main.js",
+      "lineNumber": 580,
+      "columnNumber": 23,
+      "id": 15
+    },
+    {
+      "level": 5,
+      "additional": [],
+      "message": "Product Delete - Product Name: Teddy - Product Teddy is Deleted Successfully",
+      "timestamp": "2023-09-04T11:33:18.907Z",
+      "fileName": "main.js",
+      "lineNumber": 408,
+      "columnNumber": 21,
+      "id": 16
+    },
+    {
+      "level": 5,
+      "additional": [],
+      "message": "Admin Logout Successfully",
+      "timestamp": "2023-09-04T11:33:24.865Z",
+      "fileName": "main.js",
+      "lineNumber": 1896,
+      "columnNumber": 17,
+      "id": 17
+    },
+    {
+      "level": 5,
+      "additional": [],
+      "message": "Admin Login:Login Success",
+      "timestamp": "2023-09-04T11:41:02.413Z",
+      "fileName": "main.js",
+      "lineNumber": 750,
+      "columnNumber": 21,
+      "id": 18
+    },
+    {
+      "level": 5,
+      "additional": [],
+      "message": "Product Add - Product Name:  Product Teddy is added successfully",
+      "timestamp": "2023-09-04T11:41:41.929Z",
+      "fileName": "main.js",
+      "lineNumber": 221,
+      "columnNumber": 21,
+      "id": 19
+    },
+    {
+      "level": 5,
+      "additional": [],
+      "message": "Product Update - Product Teddy has been updated successfully",
+      "timestamp": "2023-09-04T11:41:55.489Z",
+      "fileName": "main.js",
+      "lineNumber": 580,
+      "columnNumber": 23,
+      "id": 20
+    },
+    {
+      "level": 5,
+      "additional": [],
+      "message": "Product Delete - Product Teddy is Deleted Successfully",
+      "timestamp": "2023-09-04T11:42:05.954Z",
+      "fileName": "main.js",
+      "lineNumber": 408,
+      "columnNumber": 21,
+      "id": 21
+    },
+    {
+      "level": 5,
+      "additional": [],
+      "message": "Admin Logout Successfully",
+      "timestamp": "2023-09-04T11:42:11.593Z",
+      "fileName": "main.js",
+      "lineNumber": 1896,
+      "columnNumber": 17,
+      "id": 22
+    },
+    {
+      "level": 5,
+      "additional": [],
+      "message": "User Logout Successfully",
+      "timestamp": "2023-09-04T18:35:03.890Z",
+      "fileName": "main.js",
+      "lineNumber": 1898,
+      "columnNumber": 17,
+      "id": 23
+    },
+    {
+      "level": 5,
+      "additional": [],
+      "message": "User- 2Login Success",
+      "timestamp": "2023-09-04T18:35:45.084Z",
+      "fileName": "main.js",
+      "lineNumber": 3699,
+      "columnNumber": 21,
+      "id": 24
+    },
+    {
+      "level": 5,
+      "additional": [],
+      "message": "User Logout Successfully",
+      "timestamp": "2023-09-04T18:41:08.429Z",
+      "fileName": "main.js",
+      "lineNumber": 1898,
+      "columnNumber": 17,
+      "id": 25
+    },
+    {
+      "level": 5,
+      "additional": [],
+      "message": "User- 2Login Success",
+      "timestamp": "2023-09-04T18:41:23.377Z",
+      "fileName": "main.js",
+      "lineNumber": 3699,
+      "columnNumber": 21,
+      "id": 26
+    },
+    {
+      "level": 5,
+      "additional": [],
+      "message": "User Logout Successfully",
+      "timestamp": "2023-09-05T01:50:11.676Z",
+      "fileName": "main.js",
+      "lineNumber": 1896,
+      "columnNumber": 17,
+      "id": 27
+    },
+    {
+      "level": 5,
+      "additional": [],
+      "message": "User- 2Login Success",
+      "timestamp": "2023-09-05T01:50:32.980Z",
+      "fileName": "main.js",
+      "lineNumber": 3687,
+      "columnNumber": 21,
+      "id": 28
+    },
+    {
+      "level": 5,
+      "additional": [],
+      "message": "{\n  \"name\": \"Red Roses\",\n  \"price\": \"150\",\n  \"category\": \"Flowers\",\n  \"color\": \"Red\",\n  \"description\": \"Every lover's muse, Red Roses are truly poetic. Professing emotions with Red Roses is the perfect thing. So, go ahead and tell everyone what the heart says with this bunch of 8 Red Roses, wrapped warmly in Red paper\",\n  \"image\": \"https://d3cif2hu95s88v.cloudfront.net/live-site-2016/product-image/21stDec/red-love-600x600.JPG\",\n  \"discount\": 20,\n  \"quantity\": 1,\n  \"productId\": 4,\n  \"userId\": 2,\n  \"id\": 2\n}",
+      "timestamp": "2023-09-05T01:50:49.779Z",
+      "fileName": "main.js",
+      "lineNumber": 1226,
+      "columnNumber": 21,
+      "id": 29
+    },
+    {
+      "level": 5,
+      "additional": [],
+      "message": "User Logout Successfully",
+      "timestamp": "2023-09-05T02:02:18.168Z",
+      "fileName": "main.js",
+      "lineNumber": 1901,
+      "columnNumber": 17,
+      "id": 30
+    },
+    {
+      "level": 5,
+      "additional": [],
+      "message": "User- 2Login Success",
+      "timestamp": "2023-09-05T02:03:03.678Z",
+      "fileName": "main.js",
+      "lineNumber": 3691,
+      "columnNumber": 21,
+      "id": 31
+    },
+    {
+      "level": 5,
+      "additional": [],
+      "message": "{\n  \"name\": \"Red Roses\",\n  \"price\": \"150\",\n  \"category\": \"Flowers\",\n  \"color\": \"Red\",\n  \"description\": \"Every lover's muse, Red Roses are truly poetic. Professing emotions with Red Roses is the perfect thing. So, go ahead and tell everyone what the heart says with this bunch of 8 Red Roses, wrapped warmly in Red paper\",\n  \"image\": \"https://d3cif2hu95s88v.cloudfront.net/live-site-2016/product-image/21stDec/red-love-600x600.JPG\",\n  \"discount\": 20,\n  \"quantity\": 1,\n  \"productId\": 4,\n  \"userId\": 2,\n  \"id\": 2\n}",
+      "timestamp": "2023-09-05T02:03:21.177Z",
+      "fileName": "main.js",
+      "lineNumber": 1227,
+      "columnNumber": 21,
+      "id": 32
+    },
+    {
+      "level": 5,
+      "additional": [],
+      "message": "{\n  \"name\": \"Purple Roses\",\n  \"price\": \"150\",\n  \"category\": \"Flowers\",\n  \"color\": \"Purple\",\n  \"description\": \"A soothing display that exudes affection and sentimentality. Inclusive of lilac roses, pink lisianthus, light mauve spray chrysanthemum, kamini stems and lavender leather ferns, its marshalled to provide an unequalled glow at a stroke, filling you up with tender warmth.\",\n  \"image\": \"https://res.cloudinary.com/interflora/f_auto,q_auto,t_pnopt9prodlp/products/p-mauve-me-more-187560-m.jpg\",\n  \"discount\": 20,\n  \"quantity\": 1,\n  \"productId\": 3,\n  \"userId\": 2,\n  \"id\": 3\n}",
+      "timestamp": "2023-09-05T02:03:21.203Z",
+      "fileName": "main.js",
+      "lineNumber": 1227,
+      "columnNumber": 21,
+      "id": 33
+    },
+    {
+      "level": 5,
+      "additional": [],
+      "message": "Product added to cart:Red Roses,Purple Roses",
+      "timestamp": "2023-09-05T02:03:21.208Z",
+      "fileName": "main.js",
+      "lineNumber": 1239,
+      "columnNumber": 21,
+      "id": 34
+    }
+  ]
+}

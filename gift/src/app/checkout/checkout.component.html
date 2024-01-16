@@ -1,0 +1,61 @@
+<div class="checkout">
+  <h1>Checkout</h1>
+  <h3>Add shipping address</h3>
+  <p class="message">{{ orderMessage }}</p>
+  <form #orderData="ngForm" class="common-form" (ngSubmit)="orderNow(orderData.value)" >
+    <div class="mb-3">
+      <input
+        type="text"
+        class="form-input"
+        name="email"
+        placeholder="Enter User Email"
+        [(ngModel)]="orderDataModel.email"
+        required
+        email
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+      />
+      <div *ngIf="orderData.controls['email'].invalid && orderData.controls['email'].touched ">
+        <div class="invalid-input">
+        <div *ngIf="orderData.controls['email'].errors?.['required']">Email is required</div>
+        <div *ngIf="orderData.controls['email'].errors?.['pattern']">Invalid email format</div>
+        </div>
+      </div>
+    </div>
+    <div class="mb-3">
+      <input
+        type="text"
+        class="form-input"
+        name="address"
+        placeholder="Enter User Address"
+        [(ngModel)]="orderDataModel.address"
+        required
+      />
+      <div *ngIf="orderData.controls['address'].invalid && orderData.controls['address'].touched">
+        <div class="invalid-input">
+        <div *ngIf="orderData.controls['address'].errors?.['required']">Address is required</div>
+        </div>
+      </div>
+    </div>
+    <div class="mb-3">
+      <input
+        type="text"
+        class="form-input"
+        name="contact"
+        placeholder="Enter contact details"
+        [(ngModel)]="orderDataModel.contact"
+        required
+        pattern="[0-9]{10}"
+      />
+      <div *ngIf="orderData.controls['contact'].invalid && orderData.controls['contact'].touched">
+        <div class="invalid-input">
+        <div *ngIf="orderData.controls['contact'].errors?.['required']">Contact details are required</div>
+        <div *ngIf="orderData.controls['contact'].errors?.['pattern']">Invalid contact format (10 digits required)</div>
+        </div>
+      </div>
+    </div>
+    <div class="button">
+      <button type="submit" class="btn btn-primary mb-2">Order Now</button><br>
+      <button (click)="goBack()" class="btn btn-primary mb-2">Back</button>
+    </div>
+  </form>
+</div>

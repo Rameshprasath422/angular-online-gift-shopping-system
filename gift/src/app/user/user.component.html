@@ -1,0 +1,107 @@
+<div class="background">
+  <div class="user-auth">
+    <div *ngIf="!showLogin" class="sign-up">
+      <h1>User Signup</h1>
+      <form #userSignUp="ngForm" class="common-form" (ngSubmit)="signUp(userSignUp.value)">
+        <p class="message">{{message}}</p>
+        <div class="mb-3">
+          <input
+            type="text"
+            class="form-input"
+            name="name"
+            placeholder="Enter User Name"
+            minlength="4"
+            ngModel
+            #name="ngModel"
+            [(ngModel)]="userData.name"
+            required
+            pattern="^[a-zA-Z]*$"
+          />
+          <p class="invalid-input"><span *ngIf="(name.touched||userSignUp.submitted)&&name.errors?.['required']">Name is Required</span></p>
+          <p class="invalid-input"><span *ngIf="(name.touched||userSignUp.submitted)&&name.errors?.['pattern']">Username contains only letters</span></p>
+          <p class="invalid-input"><span *ngIf="(name.touched||userSignUp.submitted)&&name.errors?.['minlength']">Username must contain at least 4 characters</span></p>
+        </div>
+        <div class="mb-3">
+          <input
+            type="text"
+            class="form-input"
+            name="email"
+            placeholder="Enter User Email"
+            ngModel
+            #email="ngModel"
+            [(ngModel)]="userData.email"
+            required
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          />
+          <p class="invalid-input"><span *ngIf="(email.touched||userSignUp.submitted)&&email.errors?.['required']">Email is Required</span></p>
+          <p class="invalid-input"><span *ngIf="(email.touched||userSignUp.submitted)&&email.errors?.['pattern']">Enter a valid Email Address</span></p>
+        </div>
+        <div class="mb-3">
+          <input
+            type="password"
+            class="form-input"
+            name="password"
+            placeholder="Enter User password"
+            minlength="6"
+            maxlength="20"
+            ngModel
+            #password="ngModel"
+            [(ngModel)]="userData.password"
+            required
+            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$"
+          />
+        </div>
+        <p class="invalid-input"><span *ngIf="(password.touched||userSignUp.submitted)&&password.errors?.['required']">Password is Required</span></p>
+        <p class="invalid-input"><span *ngIf="(password.touched||userSignUp.submitted)&&password.errors?.['pattern']">Enter Valid Password</span></p>
+        <div class="button">
+          <button [disabled]="userSignUp.invalid" class="btn btn-primary mb-2">Sign Up</button>
+          <p>Already Have Account ? <a (click)="openLogin()">Click Here</a></p>
+        </div>
+      </form>
+    </div>
+
+    <div *ngIf="showLogin" class="login">
+      <h1>User Login</h1>
+      <form #userLogin="ngForm" class="common-form" (ngSubmit)="login(userLogin.value)">
+        <p class="error-p">{{ message }}</p>
+        <div class="mb-3">
+          <input
+            type="text"
+            class="form-input"
+            name="email"
+            placeholder="Enter User Email"
+            ngModel
+            #email="ngModel"
+            [(ngModel)]="userData.email"
+            required
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          />
+        </div>
+        <p class="invalid-input"><span *ngIf="(email.touched||userLogin.submitted)&&email.errors?.['required']">Email is Required</span></p>
+        <p class="invalid-input"><span *ngIf="(email.touched||userLogin.submitted)&&email.errors?.['pattern']">Enter a valid Email Address</span></p>
+        <div class="mb-3">
+          <input
+            type="password"
+            class="form-input"
+            name="password"
+            placeholder="Enter User Password"
+            ngModel
+            minlength="6"
+            maxlength="20"
+            #password="ngModel"
+            [(ngModel)]="userData.password"
+            required
+            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$"
+          />
+        </div>
+        <p class="invalid-input"><span *ngIf="(password.touched||userLogin.submitted)&&password.errors?.['required']">Password is Required</span></p>
+        <p class="invalid-input"><span *ngIf="(password.touched||userLogin.submitted)&&password.errors?.['pattern']">Enter Valid Password</span></p>
+        <div class="button">
+          <button [disabled]="userLogin.invalid" class="btn btn-primary mb-2">Login</button>
+          <p>Want to Create Account ? <a (click)="openSignUp()">Click Here</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+

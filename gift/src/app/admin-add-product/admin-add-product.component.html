@@ -1,0 +1,108 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="text-center">
+          <h1>Add New Product</h1>
+        </div>
+  <p class="message">{{addProductMessage}}</p>
+  <form #addProduct="ngForm"
+  (ngSubmit)="submit(addProduct.value)"
+   class="common-form">
+   <div class="mb-3">
+    <input
+      type="text"
+      class="form-input"
+      placeholder="Enter Product Name"
+      name="name"
+      ngModel
+      required
+    />
+    <div *ngIf="addProduct.controls['name'].invalid && addProduct.controls['name'].touched">
+      <div class="message">
+      <div *ngIf="addProduct.controls['name'].errors?.['required']">Product Name is required</div>
+      </div>
+    </div>
+  </div>
+    <div class="mb-3">
+    <input
+    type="text"
+    class="form-input"
+    placeholder="Enter Product Price"
+    name="price"
+    ngModel
+    required
+  />
+  <div *ngIf="addProduct.controls['price'].invalid && addProduct.controls['price'].touched">
+    <div class="message">
+    <div *ngIf="addProduct.controls['price'].errors?.['required']">Product Price is required</div>
+    <div *ngIf="addProduct.controls['price'].errors?.['min']">Product Price must be greater than or equal to 0</div>
+    </div>
+  </div>
+  </div>
+  <div class="mb-3">
+  <input
+  type="text"
+  class="form-input"
+  placeholder="Enter Product Category"
+  name="category"
+  ngModel
+  required
+/>
+<div *ngIf="addProduct.controls['category'].invalid && addProduct.controls['category'].touched">
+  <div class="message">
+  <div *ngIf="addProduct.controls['category'].errors?.['required']">Product Category is required</div>
+  </div>
+</div>
+</div>
+<div class="mb-3">
+<input
+type="text"
+class="form-input"
+placeholder="Enter Product Color"
+name="color"
+ngModel
+required
+/>
+<div *ngIf="addProduct.controls['color'].invalid && addProduct.controls['color'].touched">
+  <div class="message">
+  <div *ngIf="addProduct.controls['color'].errors?.['required']">Product Color is required</div>
+  </div>
+</div>
+</div>
+<div class="mb-3">
+<textarea
+type="text"
+class="form-input"
+placeholder="Enter Product Description"
+name="description"
+ngModel
+required
+></textarea>
+<div *ngIf="addProduct.controls['description'].invalid && addProduct.controls['description'].touched">
+  <div *ngIf="addProduct.controls['description'].errors?.['required']">Product Description is required</div>
+</div>
+</div>
+<div class="mb-3">
+<input
+type="text"
+class="form-input"
+placeholder="Enter Product Image URL"
+name="image"
+ngModel
+required
+/>
+<div *ngIf="addProduct.controls['image'].invalid && addProduct.controls['image'].touched">
+  <div *ngIf="addProduct.controls['image'].errors?.['required']">Product Image URL is required</div>
+</div>
+</div>
+<div class="button">
+<button class="btn btn-primary mb-2">Add Product</button><br>
+<button (click)="goBack()" class="btn btn-primary mb-2">Back</button>
+</div>
+  </form>
+</div>
+</div>
+</div>
+</div>
+

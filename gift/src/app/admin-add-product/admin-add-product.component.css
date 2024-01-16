@@ -1,0 +1,49 @@
+.card{
+  margin-top: 40px;
+  border: none;
+  width: 400px;
+  padding: 50px;
+  position:absolute;
+  top:75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: hsla(205, 46%, 30%, 1);
+  background: linear-gradient(90deg, rgb(107, 112, 41) 0%, rgb(177, 170, 191) 100%);
+}
+
+.card h1{
+  color: #fff;
+}
+
+label{
+  color: #fff;
+}
+
+.mb-3
+{
+  border-radius:2px solid blue;
+  border-radius:4px;
+}
+.button
+{
+  text-align:center;
+}
+input[type="text"],
+input[type="number"],
+textarea[type="text"]
+{
+  flex:1;
+  padding:4px;
+  box-sizing:border-box;
+  width:90%;
+}
+
+.text-center
+{
+  color:blue;
+}
+.message
+{
+  color:red;
+}
+
